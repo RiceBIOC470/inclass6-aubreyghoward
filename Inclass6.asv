@@ -10,6 +10,8 @@ names = {'tom','joan','marshall','bill'};
 ages = {25,30,29,22};
 PF = {true true false true};
 
+mean(ages)
+
 students = makestudents(names,ages,PF);
 
 students(1)
@@ -21,17 +23,11 @@ disp('end of program')
 
 avg_age(students)
 
-
-
-%%
 %2. In this folder, you will find an immunofluorescence image of human stem
 %cells stained for a gene called SOX2. Write a function which takes a
 %filename as input and returns a structure containing metaData. Include at
 %least the bitdepth, size, and date the image was taken. Do not include any
 %information you do not understand. Hint: use the builtin function imfinfo
-
-impros('160611-AntiNodal-SD20x_f0003_w0002.tif')
-imfinfo(
 %b. Look at the field ImageDescription in the output of imfinfo - there is
 %a lot of information here. Write code that gets the actual temperature
 %from the camera out of this field. (Hint: it is preceded by the words
