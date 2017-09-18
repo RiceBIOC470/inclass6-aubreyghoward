@@ -30,10 +30,10 @@ avg_age(students)
 %least the bitdepth, size, and date the image was taken. Do not include any
 %information you do not understand. Hint: use the builtin function imfinfo
 
-impros('160611-AntiNodal-SD20x_f0003_w0002.tif')
-imfinfo(
 %b. Look at the field ImageDescription in the output of imfinfo - there is
 %a lot of information here. Write code that gets the actual temperature
 %from the camera out of this field. (Hint: it is preceded by the words
 %"Actual Temperature" which don't appear anywhere else in
 %ImageDescription). 
+
+impros('160611-AntiNodal-SD20x_f0003_w0002.tif')

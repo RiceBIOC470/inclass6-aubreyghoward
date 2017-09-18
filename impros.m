@@ -6,5 +6,9 @@ function [metadata] = impros (filename)
     metadata.filesize = wholeinfo.FileSize;
     metadata.format = wholeinfo.Format;
     metadata.bitdepth = wholeinfo.BitDepth;
-    
-end
+    x = [strfind(wholeinfo.ImageDescription,"Actual Temperature=")];
+    y = [strfind(wholeinfo.ImageDescription,"Cooling=")];
+    z = str2num(wholeinfo.ImageDescription((x+19):(y-3)));
+    metadata.temp = z
+   
+ end
